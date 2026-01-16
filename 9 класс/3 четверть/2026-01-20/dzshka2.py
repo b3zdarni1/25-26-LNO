@@ -9,6 +9,6 @@ def insertion_sort(arr):
         a[j+1] = key
     return a
 
-lst = list(map(int, input("Введите числа через пробела: ").split()))
+lst = list(map(int, input("Введите числа через пробел: ").split()))
 sorted_lst = insertion_sort(lst)
 print("Отсортированный массив:", sorted_lst)
