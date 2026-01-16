@@ -1,13 +1,14 @@
 def insertion_sort(arr):
-    for i in range(1, len(arr)):
-        key = arr[i]
+    a = arr.copy()
+    for i in range(1, len(a)):
+        key = a[i]
         j = i - 1
-        while j >= 0 and arr[j] > key:
-            arr[j + 1] = arr[j]
+        while j >= 0 and a[j] > key:
+            a[j+1] = a[j]
             j -= 1
-        arr[j + 1] = key
-    return arr
-data = [64, 34, 25, 12, 22, 11, 90]
-print("До сортировки:", data)
-sorted_data = insertion_sort(data.copy())
-print("После сортировки:", sorted_data)
+        a[j+1] = key
+    return a
+
+lst = list(map(int, input("Введите числа через пробела: ").split()))
+sorted_lst = insertion_sort(lst)
+print("Отсортированный массив:", sorted_lst)
