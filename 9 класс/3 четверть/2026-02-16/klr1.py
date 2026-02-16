@@ -1,1 +1,1 @@
-zov zov
+import numpy as np
