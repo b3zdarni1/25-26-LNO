@@ -18,4 +18,5 @@ def L(x):
 
 xxx = np.linspace(0, 4, 100)
 plt.plot(xxx, L(xxx))
+
 plt.show()
