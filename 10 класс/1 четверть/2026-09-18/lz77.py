@@ -1,17 +1,20 @@
-from typing import Iterable, Optional, Tuple
-
-def lz77_decode(tokens: Iterable[Tuple[int, int, Optional[int]]]) -> bytes:
-    out = bytearray()
-
-    for offset, length, next_char in tokens:
-        if length > 0:
-            if offset <= 0 or offset > len(out):
-                raise ValueError(f"Некорректный offset={offset} при длине вывода {len(out)}")
-
-            for _ in range(length):
-                out.append(out[-offset])
-
-        if next_char is not None:
-            out.append(next_char)
-
-    return bytes(out)
+tokens = [
+    (0,0,'a'),
+    (0,0,'b'),
+    (2,1,'d'),
+    (2,1,'k'),
+    (4,3,'b'),
+    (0,0,'r'),
+    (3,1,None),
+    ]
+def decode(tokens):
+    result = []
+    for offset, length, char in tokens:
+        i = 0
+        while i < length:
+            result.append(result[len(result) - offset])
+            i = i + 1
+        if char != None:
+            result.append(char)
+    return result
+print(decode(tokens))
