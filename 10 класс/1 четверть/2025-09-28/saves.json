@@ -1,26 +1,79 @@
 {
   "version": 2,
-  "records": [],
+  "records": [
+    {
+      "score": 20539,
+      "height": 1994,
+      "monsters": 4,
+      "date": "02.10.2026",
+      "skin": "s6752"
+    },
+    {
+      "score": 19642,
+      "height": 1907,
+      "monsters": 3,
+      "date": "28.09.2026",
+      "skin": "whale"
+    },
+    {
+      "score": 19409,
+      "height": 1889,
+      "monsters": 3,
+      "date": "02.10.2026",
+      "skin": "s6752"
+    },
+    {
+      "score": 16271,
+      "height": 1523,
+      "monsters": 4,
+      "date": "02.10.2026",
+      "skin": "s6752"
+    },
+    {
+      "score": 12175,
+      "height": 1183,
+      "monsters": 2,
+      "date": "02.10.2026",
+      "skin": "whale"
+    }
+  ],
   "stats": {
-    "games_played": 0,
-    "total_time": 0.0,
-    "monsters_killed": 0,
-    "platforms_broken": 0,
-    "jetpacks_collected": 0,
-    "max_combo": 0,
-    "max_height": 0,
-    "cases_opened": 0,
-    "caps_earned_total": 0
+    "games_played": 14,
+    "total_time": 529.4710000000013,
+    "monsters_killed": 19,
+    "platforms_broken": 69,
+    "jetpacks_collected": 23,
+    "max_combo": 4,
+    "max_height": 1994,
+    "cases_opened": 16,
+    "caps_earned_total": 2374
   },
   "settings": {
-    "sound": true,
+    "sound": false,
     "difficulty": "normal"
   },
-  "last_launch": "28.09.2026 21:45",
-  "caps": 0,
+  "last_launch": "09.10.2026 14:06",
+  "caps": 1591,
   "skins_unlocked": [
-    "classic"
+    "classic",
+    "potato",
+    "banana",
+    "cucumber",
+    "whale",
+    "orange",
+    "alien",
+    "fire",
+    "ice",
+    "rainbow",
+    "skull",
+    "king",
+    "cyber",
+    "dragon",
+    "s67",
+    "s52",
+    "s6752",
+    "trash"
   ],
-  "skin_active": "classic",
+  "skin_active": "s6752",
   "skin_dupes": {}
 }
