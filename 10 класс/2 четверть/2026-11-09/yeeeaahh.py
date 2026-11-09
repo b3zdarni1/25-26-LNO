@@ -21,7 +21,7 @@ def utf(x):
             0b10000000 | ((x >> 6) & 0b111111),
             0b10000000 | (x & 0b111111)
         ]
-    return " ".join(f"{b:08b}" for b in answ)
-with open('nums.txt', 'w') as f:
+    return bytes(answ)
+with open('nums.txt', 'wb') as f:
     for num in nums:
-        f.write(utf(int(num)) + "\n")
+        f.write(utf(int(num)))
