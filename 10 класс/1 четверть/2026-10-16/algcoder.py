@@ -18,6 +18,7 @@ def sep(slovo):
         else:
             break
     return o
+print(sep(slovo))
 def alg(slovo):
     sep = globals()['sep'](slovo)
     L = 0
